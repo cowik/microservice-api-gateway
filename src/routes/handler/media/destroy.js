@@ -1,5 +1,4 @@
-const { stat } = require('fs');
-const apiAdapter = require('../../api');
+const apiAdapter = require('../../../api');
 
 const {
     URL_SERVICE_MEDIA

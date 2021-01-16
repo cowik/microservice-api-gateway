@@ -1,5 +1,4 @@
-const { stat } = require('fs');
-const apiAdapter = require('../../api');
+const apiAdapter = require('../../../api');
 
 const {
     URL_SERVICE_MEDIA
@@ -9,7 +8,7 @@ const api = apiAdapter(URL_SERVICE_MEDIA);
 
 module.exports = async (req, res) => {
     try {
-        const media = await api.get('/media');
+        const media = await api.post('/media', req.body);
         return res.json(media.data);
     } catch (error) {
 
