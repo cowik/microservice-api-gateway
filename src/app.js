@@ -1,6 +1,6 @@
 const express = require('express');
 
-require('dotenv').config();
+require('./utils/secret');
 
 const app = express();
 app.use(express.json({limit: '20mb'} ));
