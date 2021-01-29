@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "pm2 startOrReload user.ecosystem.config.js"
+    "start:dev": "pm2 startOrReload user.ecosystem.config.js",
+    "start:production": "pm2 startOrReload ecosystem.config.js --only api-gateway-production --update-env"
   },
   "author": "",
   "license": "ISC"
