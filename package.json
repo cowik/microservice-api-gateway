@@ -1,5 +1,5 @@
 {
-  "name": "api-gateway",
+  "name": "idkode-api",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "start:dev": "nodemon src/app.js",
-    "start:production": "pm2 startOrReload ecosystem.config.js --only api-gateway-production --update-env"
+    "start:production": "pm2 startOrReload ecosystem.config.js --only idkode-api-production --update-env"
   },
   "author": "",
   "license": "ISC"

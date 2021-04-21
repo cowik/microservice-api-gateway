@@ -13,7 +13,7 @@ const buildApps = (name, instances, watch, env) => ({
   
   module.exports = {
 	apps: [
-	  buildApps('api-gateway-production', 1, false, 'production'),
+	  buildApps('idkode-api-production', 1, false, 'production'),
 	],
   };
   

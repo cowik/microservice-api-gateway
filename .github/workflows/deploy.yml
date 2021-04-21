@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: api-gateway
+      - name: idkode-api
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd /live/idkode/api-gateway
+            cd /live/idkode-api
             git pull origin live
             npm install
             npm run start:production
