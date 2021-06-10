@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
-            cd /live/idkode-api
+            cd /home/wikrama/project-live/idkode-api
             git pull origin live
             npm install
             npm run start:production
